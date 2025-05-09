@@ -24,7 +24,7 @@ llm = ChatGroq(model="Llama3-8b-8192",api_key=groq_api_key)
 st.title("Nexora File Reader")
 st.write("Upload Files and Get Answer ")
 st.sidebar.write("Session_id")
-session_id=st.sidebar.text_input("Enter_Session_id",value="Defauled_session")
+session_id=st.sidebar.text_input("Enter_Session_id",value="gen-ai")
 text_input = st.text_input("Ask Anything Regarding Uploaded Documents")
 upload_files = st.file_uploader("Browse File",accept_multiple_files=True)
 
